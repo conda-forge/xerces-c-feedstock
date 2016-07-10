@@ -3,6 +3,10 @@ if %ARCH% == 64 (
     set PLATF=x64
 	set OUTDIR=Win64
 ) else (
+:: Need to move a more current msbuild into PATH.  32-bit one in particular on AppVeyor barfs on the solution
+::     This one comes from the Win7 SDK (.net 4.0), and is known to work.
+    COPY C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe .\
+    set "PATH=%CD%;%PATH%"
     set PLATF=Win32
 	set OUTDIR=Win32
 )
