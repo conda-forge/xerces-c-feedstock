@@ -5,8 +5,10 @@ if %ARCH% == 64 (
     set PLATF=x64
 	set OUTDIR=Win64
 ) else (
-    COPY C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe .\
-    set "PATH=%CD%;%PATH%"
+    if %VS_MAJOR% == 9 (
+        COPY C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe .\
+        set "PATH=%CD%;%PATH%"
+    )
     set PLATF=Win32
 	set OUTDIR=Win32
 )
