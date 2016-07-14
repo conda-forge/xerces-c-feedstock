@@ -43,7 +43,6 @@ if not exist %XERCESSOLUTION% (
 
 REM Headers. Must be a better way...
 echo .cpp > excludelist.txt
-echo .c >> excludelist.txt
 mkdir %LIBRARY_INC%\xercesc
 xcopy /s /exclude:excludelist.txt src\xercesc %LIBRARY_INC%\xercesc
 if errorlevel 1 exit 1
