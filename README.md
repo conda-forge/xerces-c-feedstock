@@ -11,6 +11,18 @@ Summary: Xerces-C++ is a validating XML parser written in a portable subset of C
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xerces-c-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xerces-c-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/xerces-c-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xerces-c-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xerces-c-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xerces-c-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xerces-c/badges/version.svg)](https://anaconda.org/conda-forge/xerces-c)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xerces-c/badges/downloads.svg)](https://anaconda.org/conda-forge/xerces-c)
+
 Installing xerces-c
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `xerces-c` available on your platf
 ```
 conda search xerces-c --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xerces-c-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xerces-c-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xerces-c-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xerces-c-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xerces-c-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xerces-c-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xerces-c/badges/version.svg)](https://anaconda.org/conda-forge/xerces-c)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xerces-c/badges/downloads.svg)](https://anaconda.org/conda-forge/xerces-c)
 
 
 Updating xerces-c-feedstock
