@@ -33,6 +33,11 @@ requirements:
     - vc 10  # [win and py34]
     - vc 14  # [win and py>=35]
 
+test:
+  commands:
+    - conda inspect linkages -p $PREFIX xerces-c  # [not win]
+    - conda inspect objects -p $PREFIX xerces-c  # [osx]
+
 about:
   home: http://xerces.apache.org/xerces-c/
   license: Apache 2.0
