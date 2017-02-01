@@ -10,7 +10,7 @@ source:
   md5: 21bb097b711a513275379b59757cba4c
 
 build:
-  number: 4
+  number: 3
   # No need to build vc14 twice.
   skip: True  # [win and py>=35]
   features:
