@@ -17,8 +17,9 @@ build:
 
 requirements:
   build:
-    - toolchain
     - python  # [win]
+    - cmake  # [win]
+    - toolchain
     - icu 58.*  # [not win]
     - perl 5.22.2.1  # [not win]
     - vc 9  # [win and py27]
