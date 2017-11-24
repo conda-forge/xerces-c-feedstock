@@ -1,42 +1,38 @@
-{% set version = "3.1.4" %}
+{% set version = "3.2.0" %}
 
 package:
   name: xerces-c
   version: {{ version }}
 
 source:
-  fn: xerces-c-{{ version }}.tar.gz
-  url: http://apache.uberglobalmirror.com//xerces/c/3/sources/xerces-c-{{ version }}.tar.gz
-  md5: 21bb097b711a513275379b59757cba4c
+  url: http://apache.uberglobalmirror.com/xerces/c/3/sources/xerces-c-{{ version }}.tar.gz
+  sha256: d3162910ada85612f5b8cc89cdab84d0ad9a852a49577691e54bc7e9fc304e15
 
 build:
-  number: 3
-  # No need to build vc14 twice.
-  skip: True  # [win and py>=35]
+  number: 0
+  skip: True  # [win and py36]
   features:
     - vc9  # [win and py27]
-    - vc10  # [win and py34]
-    - vc14  # [win and py>=35]
+    - vc14  # [win and (py35 or py36)]
 
 requirements:
   build:
-    - toolchain
     - python  # [win]
+    - cmake  # [win]
+    - toolchain
     - icu 58.*  # [not win]
-    - perl  # [not win]
+    - perl 5.22.2.1  # [not win]
     - vc 9  # [win and py27]
-    - vc 10  # [win and py34]
-    - vc 14  # [win and py>=35]
+    - vc 14  # [win and (py35 or py36)]
   run:
     - icu 58.*  # [not win]
     - vc 9  # [win and py27]
-    - vc 10  # [win and py34]
-    - vc 14  # [win and py>=35]
+    - vc 14  # [win and (py35 or py36)]
 
 test:
   commands:
-    - conda inspect linkages -p $PREFIX xerces-c  # [not win]
-    - conda inspect objects -p $PREFIX xerces-c  # [osx]
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://xerces.apache.org/xerces-c/
