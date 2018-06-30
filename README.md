@@ -14,14 +14,16 @@ Summary: Xerces-C++ is a validating XML parser written in a portable subset of C
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xerces-c-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xerces-c-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xerces-c-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xerces-c-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xerces-c-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xerces-c-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/xerces-c-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/xerces-c-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/xerces-c-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/xerces-c-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/xerces-c-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/xerces-c-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xerces-c/badges/version.svg)](https://anaconda.org/conda-forge/xerces-c)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xerces-c/badges/downloads.svg)](https://anaconda.org/conda-forge/xerces-c)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xerces--c-green.svg)](https://anaconda.org/conda-forge/xerces-c) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xerces-c.svg)](https://anaconda.org/conda-forge/xerces-c) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xerces-c.svg)](https://anaconda.org/conda-forge/xerces-c) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xerces-c.svg)](https://anaconda.org/conda-forge/xerces-c) |
 
 Installing xerces-c
 ===================
