@@ -9,25 +9,18 @@ source:
   sha256: 6dd4602b8844a9e1ab206e0270935d0c9b5f9d88771026e7f350e429bd2d04a0
 
 build:
-  number: 0
-  skip: True  # [win and py36]
-  features:
-    - vc9  # [win and py27]
-    - vc14  # [win and (py35 or py36)]
+  number: 1
 
 requirements:
   build:
-    - python  # [win]
     - cmake  # [win]
-    - toolchain
-    - icu 58.*  # [not win]
     - perl 5.22.2.1  # [not win]
-    - vc 9  # [win and py27]
-    - vc 14  # [win and (py35 or py36)]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - icu       # [not win]
   run:
-    - icu 58.*  # [not win]
-    - vc 9  # [win and py27]
-    - vc 14  # [win and (py35 or py36)]
+    - icu       # [not win]
 
 test:
   commands:

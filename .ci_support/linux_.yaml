@@ -1,0 +1,9 @@
+c_compiler:
+- toolchain_c
+cxx_compiler:
+- toolchain_cxx
+icu:
+- '58'
+pin_run_as_build:
+  icu:
+    max_pin: x
