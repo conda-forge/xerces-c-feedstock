@@ -9,12 +9,12 @@ source:
   sha256: 6dd4602b8844a9e1ab206e0270935d0c9b5f9d88771026e7f350e429bd2d04a0
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
     - cmake  # [win]
-    - perl 5.22.2.1  # [not win]
+    - perl  # [not win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
