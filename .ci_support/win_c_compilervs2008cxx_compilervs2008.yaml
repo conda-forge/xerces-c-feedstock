@@ -2,11 +2,6 @@ c_compiler:
 - vs2008
 cxx_compiler:
 - vs2008
-icu:
-- '58'
-pin_run_as_build:
-  icu:
-    max_pin: x
 zip_keys:
 - - c_compiler
   - cxx_compiler
