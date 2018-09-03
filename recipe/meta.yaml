@@ -5,8 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  url: http://apache.uberglobalmirror.com/xerces/c/3/sources/xerces-c-{{ version }}.tar.gz
-  sha256: 6dd4602b8844a9e1ab206e0270935d0c9b5f9d88771026e7f350e429bd2d04a0
+  url: http://archive.apache.org/dist/xerces/c/3/sources/xerces-c-{{ version }}.tar.xz
+  sha256: 35d8db18ebe6db353850903981cd07cca64abeba071602e7e32596714352de08
 
 build:
   number: 2
