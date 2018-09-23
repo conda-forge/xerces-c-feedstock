@@ -9,7 +9,7 @@ source:
   sha256: 6dd4602b8844a9e1ab206e0270935d0c9b5f9d88771026e7f350e429bd2d04a0
 
 build:
-  number: 3
+  number: 1003
   run_exports:
     # changes SO names at minor rev
     - {{ pin_subpackage('xerces-c', max_pin='x.x') }}
