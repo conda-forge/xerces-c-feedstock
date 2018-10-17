@@ -1,25 +1,26 @@
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 
 package:
   name: xerces-c
   version: {{ version }}
 
 source:
-  url: http://apache.uberglobalmirror.com/xerces/c/3/sources/xerces-c-{{ version }}.tar.gz
-  sha256: 6dd4602b8844a9e1ab206e0270935d0c9b5f9d88771026e7f350e429bd2d04a0
+  url: https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-{{ version }}.tar.gz
+  sha256: dd6191f8aa256d3b4686b64b0544eea2b450d98b4254996ffdfe630e0c610413
 
 build:
-  number: 1003
+  number: 1000
   run_exports:
     # changes SO names at minor rev
     - {{ pin_subpackage('xerces-c', max_pin='x.x') }}
 
 requirements:
   build:
-    - cmake  # [win]
     - perl  # [not win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - cmake  # [win]
+    - make  # [not win]
   host:
     - icu       # [not win]
   run:
