@@ -9,7 +9,7 @@ source:
   sha256: dd6191f8aa256d3b4686b64b0544eea2b450d98b4254996ffdfe630e0c610413
 
 build:
-  number: 1001
+  number: 1002
   run_exports:
     # changes SO names at minor rev
     - {{ pin_subpackage('xerces-c', max_pin='x.x') }}
@@ -25,11 +25,6 @@ requirements:
     - icu       # [not win]
   run:
     - icu       # [not win]
-
-test:
-  commands:
-    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
-    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://xerces.apache.org/xerces-c/
