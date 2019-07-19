@@ -2,7 +2,7 @@ mkdir build_dir
 cd build_dir
 
 :: Configure step.
-cmake -G "%CMAKE_GENERATOR%" ^
+cmake -G "NMake Makefiles" ^
       -D CMAKE_BUILD_TYPE=Release ^
       -D CMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
       -D BUILD_SHARED_LIBS:BOOL=ON ^
