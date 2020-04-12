@@ -1,4 +1,4 @@
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 
 package:
   name: xerces-c
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-{{ version }}.tar.gz
-  sha256: dd6191f8aa256d3b4686b64b0544eea2b450d98b4254996ffdfe630e0c610413
+  sha256: fb96fc49b1fb892d1e64e53a6ada8accf6f0e6d30ce0937956ec68d39bd72c7e
 
 build:
-  number: 1004
+  number: 0
   run_exports:
     # changes SO names at minor rev
     - {{ pin_subpackage('xerces-c', max_pin='x.x') }}
@@ -31,7 +31,7 @@ about:
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Xerces-C++ is a validating XML parser written in a portable subset of C++'
+  summary: Xerces-C++ is a validating XML parser written in a portable subset of C++
 
 extra:
   recipe-maintainers:
