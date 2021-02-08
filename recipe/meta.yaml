@@ -17,6 +17,7 @@ build:
 requirements:
   build:
     - perl  # [not win]
+    - gnuconfig  # [unix]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake  # [win]
