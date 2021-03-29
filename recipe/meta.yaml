@@ -8,7 +8,7 @@ source:
   url: https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-{{ version }}.tar.gz
   sha256: fb96fc49b1fb892d1e64e53a6ada8accf6f0e6d30ce0937956ec68d39bd72c7e
   patches:
-    - crosscompilefunctions.patch  # [osx and arm64]
+    - crosscompilefunctions.patch  # [build_platform != target_platform]
 
 build:
   number: 2
@@ -24,7 +24,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake  # [win]
     - make  # [not win]
-    - autoconf  # [osx and arm64]
+    - autoconf  # [build_platform != target_platform]
   host:
     - icu       # [not win]
   run:
