@@ -25,6 +25,7 @@ requirements:
     - cmake  # [win]
     - make  # [not win]
     - autoconf  # [build_platform != target_platform]
+    - automake  # [build_platform != target_platform]
   host:
     - icu       # [not win]
   run:
