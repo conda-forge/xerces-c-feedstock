@@ -11,7 +11,7 @@ source:
     - crosscompilefunctions.patch  # [build_platform != target_platform]
 
 build:
-  number: 2
+  number: 3
   run_exports:
     # changes SO names at minor rev
     - {{ pin_subpackage('xerces-c', max_pin='x.x') }}
@@ -29,8 +29,10 @@ requirements:
     - libtool  # [build_platform != target_platform]
   host:
     - icu       # [not win]
+    - libnsl  # [linux]
   run:
     - icu       # [not win]
+    - libnsl  # [linux]
 
 about:
   home: http://xerces.apache.org/xerces-c/
