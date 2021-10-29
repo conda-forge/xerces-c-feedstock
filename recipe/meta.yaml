@@ -11,7 +11,7 @@ source:
     - crosscompilefunctions.patch  # [build_platform != target_platform]
 
 build:
-  number: 3
+  number: 4
   run_exports:
     # changes SO names at minor rev
     - {{ pin_subpackage('xerces-c', max_pin='x.x') }}
