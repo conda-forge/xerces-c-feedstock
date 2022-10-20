@@ -10,7 +10,8 @@ fi
 
 ./configure --prefix=${PREFIX} \
             --with-icu \
-            --enable-static=no
+            --with-curl=${PREFIX} \
+	    --enable-static=no
 
 make -j${CPU_COUNT} ${VERBOSE_AT}
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}" != "" ]]; then
