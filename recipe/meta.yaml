@@ -28,10 +28,11 @@ requirements:
   host:
     - icu       # [not win]
     - libnsl  # [linux]
-    - libcurl
+    - libcurl # [not win]
   run:
     - icu       # [not win]
     - libnsl  # [linux]
+    - libcurl # [not win]
 
 about:
   home: http://xerces.apache.org/xerces-c/
