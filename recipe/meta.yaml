@@ -9,7 +9,7 @@ source:
   sha256: 3d8ec1c7f94e38fee0e4ca5ad1e1d9db23cbf3a10bba626f6b4afa2dedafe5ab
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # changes SO names at minor rev
     - {{ pin_subpackage('xerces-c', max_pin='x.x') }}
@@ -28,9 +28,11 @@ requirements:
   host:
     - icu       # [not win]
     - libnsl  # [linux]
+    - libcurl  # [not win]
   run:
     - icu       # [not win]
     - libnsl  # [linux]
+    - libcurl  # [not win]
 
 about:
   home: http://xerces.apache.org/xerces-c/
