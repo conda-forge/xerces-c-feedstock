@@ -9,7 +9,7 @@ source:
   sha256: 545cfcce6c4e755207bd1f27e319241e50e37c0c27250f11cda116018f1ef0f5
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # changes SO names at minor rev
     - {{ pin_subpackage('xerces-c', max_pin='x.x') }}
@@ -19,6 +19,7 @@ requirements:
     - perl  # [not win]
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake  # [win]
     - make  # [not win]
