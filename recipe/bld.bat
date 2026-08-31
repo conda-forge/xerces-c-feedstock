@@ -5,6 +5,7 @@ cd build_dir
 cmake -G "NMake Makefiles" ^
       -D CMAKE_BUILD_TYPE=Release ^
       -D CMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
+      -D transcoder=windows ^
       -D BUILD_SHARED_LIBS:BOOL=ON ^
       -D CMAKE_INSTALL_PREFIX:PATH=%LIBRARY_PREFIX% ^
       %SRC_DIR%
@@ -15,7 +16,7 @@ cmake --build . --config Release
 if errorlevel 1 exit 1
 
 :: Test.
-ctest -C Release
+ctest --output-on-failure -C Release
 if errorlevel 1 exit 1
 
 :: Install.
